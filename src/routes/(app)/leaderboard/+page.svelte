@@ -31,7 +31,7 @@
 	function triggerSearch() {}
 </script>
 
-<div class="flex flex-col p-8 overflow-x-scroll">
+<div class="flex flex-col p-8 h-full">
 	<div class="mt-4 mb-8">
 		<input
 			type="text"
@@ -41,7 +41,7 @@
 			class="bg-rich-black p-2 w-full lg:w-96 text-spring-green outline-none border-2 border-electric-blue rounded"
 		/>
 	</div>
-	<div class="grid grid-cols-4 text-spring-green gap-4 overflow-x-scroll">
+	<div class="grid grid-cols-4 text-spring-green gap-4 overflow-y-scroll">
 		<div class="text-2xl font-bold">S.No</div>
 		<div class="text-2xl font-bold">Name</div>
 		<div class="text-2xl font-bold">Register Number</div>
