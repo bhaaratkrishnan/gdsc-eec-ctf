@@ -14,8 +14,12 @@ export function helpCommand() {
 	terminal.push('help - shows this help');
 	terminal.push('clear - clears the terminal');
 	terminal.push('echo - echos the input');
-	terminal.push('ls - lists the files in the current directory');
-	terminal.push('cd - changes the current directory');
+	terminal.push(
+		'ls - lists the files in the current directory <span class="text-red-500">(Nested Directories do not work)</span>'
+	);
+	terminal.push(
+		'cd - changes the current directory <span class="text-red-500">(Nested Directories do not work)</span>'
+	);
 	terminal.push("{challenge_name}.sh - let's you submit flag for the challenge");
 	terminal.push('pwd - prints the current directory');
 	terminal.push('startup - prints startup art');
@@ -138,6 +142,6 @@ export const challengeSubmitCommand = async (command: string) => {
 };
 
 export const challengesCommand = () => {
-	const challengesRepoUrl =  "https://github.com/SarveshAadhithya/eec.gdsc.ctf"
-	window.open(challengesRepoUrl, "_blank")
-}
+	const challengesRepoUrl = 'https://github.com/SarveshAadhithya/eec.gdsc.ctf';
+	window.open(challengesRepoUrl, '_blank');
+};
